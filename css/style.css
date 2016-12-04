@@ -108,8 +108,17 @@ body{
     text-transform: capitalize;
 	font-weight: 600;
 }
+.fixed-navbar{
+    color: #01A8FF;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
 .navbar-default .navbar-nav > li > a {
     color: #fff;
+    
 }
 .logo-nav-left1 ul li.active a.act{
 	color:#fff !important;
