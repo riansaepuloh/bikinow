@@ -77,14 +77,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<nav class="fixed-navbar">
 							<!-- Brand and toggle get grouped for better mobile display -->
 							<div class="row">
-							<div class="col-lg-8">
-							
+							<div class="col-lg-7">
 							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 								<ul class="nav navbar-nav">
-									<li class="active"><a href="index.html" class="act">Home</a></li>	
 									<!-- Mega Menu -->
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer<b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="col-sm-3  multi-gd-img">
@@ -120,7 +118,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Provider <b class="caret"></b></a>
 										<ul class="dropdown-menu multi-column columns-3">
 											<div class="row">
 												<div class="col-sm-3  multi-gd-img">
@@ -161,16 +159,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</ul>
 								</div>
 								</div>
-								<div class="col-lg-4">
+								<div class="col-lg-5">
+								<form method="post" action="proses_login.php">
 								<ul class="nav navbar-nav">
-									<li class="top-right"><a href="login.html">Login</a></li>
-									<li class="top-right"><a href="registered.html"> Create Account </a></li>
+									<li class="top-right"><input type="submit" value="Sign-in" class="btn btn-default"></li>
+									<li class="top-right"><input class="form-control" type="text" name="username" placeholder="Username" required></li>
+									<li>&nbsp;</li>
+									<li class="top-right"><input class="form-control" type="password" name="password" placeholder="Password" required></li>
 								</ul>
+								</form>
 								</div>
-							
-									
-							
-							</div>
 							</div>
 							</nav>
 						</div>
@@ -178,6 +176,46 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 		<!--header-->
+		<!-- modal -->
+		<div class="modal fade modal-primary" id="daftar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <!-- tambah bagian kerja -->
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                	<div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Register</h4>
+                    </div>
+                    <div class="modal-body">
+
+					<form action="#" method="post">
+						<div class="key">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<input  type="text" value="Username" name="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="">
+							<div class="clearfix"></div>
+						</div>
+						<div class="key">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<input  type="text" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+							<div class="clearfix"></div>
+						</div>
+						<div class="key">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+							<input  type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
+							<div class="clearfix"></div>
+						</div>
+						<div class="key">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+							<input  type="password" value="Confirm Password" name="Confirm Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Confirm Password';}" required="">
+							<div class="clearfix"></div>
+						</div>
+						<input type="submit" value="Submit">
+					</form>
+					</div>
+					</div>
+                </div>
+            </div>
+
+		<!-- end modal -->
 		<!--banner-->
 		<div class="banner-w3">
 			<div class="demo-1">            
@@ -201,6 +239,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="core-slider_nav">
 						<div class="core-slider_arrow core-slider_arrow__right"></div>
 						<div class="core-slider_arrow core-slider_arrow__left"></div>
+					</div>
+					<div class="ban-text">
+						<h4><a href="#daftar" data-toggle="modal">Join-Us</a></h4>
+						<img src="images/logo.png">
 					</div>
 					<div class="core-slider_control-nav"></div>
 				</div>

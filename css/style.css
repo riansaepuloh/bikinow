@@ -102,16 +102,17 @@ body{
 }
 .logo-nav-left1 ul li a{
 	font-size:.95em;
-    color: #fff;
+    color: #0072FF;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
-	font-weight: 600;
+	font-weight: bold;
+
 }
 .fixed-navbar{
     color: #01A8FF;
-    position: fixed;
-    z-index: 9999;
+    position: absolute;
+    z-index: 500;
     width: 100%;
     top: 0;
     left: 0;
@@ -121,7 +122,8 @@ body{
     
 }
 .logo-nav-left1 ul li.active a.act{
-	color:#fff !important;
+	color:#0072FF !important;
+  font-weight: bold;
 }
 .multi-column-dropdown li a {
     color: #999 !important;
@@ -475,10 +477,12 @@ a.simpleCart_empty {
     transform: scale3d(1.1, 1.1, 1);
 }
 .ban-text {
+    text-decoration: underline;
     position: absolute;
-    top: 50%;
-    left: 25%;
-    background: rgba(13, 89, 175, 0.72);
+    text-align: center;
+    top: 25%;
+    left: 30%;
+    color: #0072FF;
     padding: 1em;
 }
 .ban-text1 {
@@ -1110,6 +1114,7 @@ h3.tittle1 {
 }
 .modal-dialog {
     width: 950px;
+    z-index: 999999;
 }
 .color-quality-left{
 	float:left;
@@ -2531,6 +2536,7 @@ li.bt-nn h6 {
     float: left;
     width: 50%;	
 }
+
 .ban-bottom3 {
     float: left;
     width: 50%;
