@@ -102,7 +102,7 @@ body{
 }
 .logo-nav-left1 ul li a{
 	font-size:.95em;
-    color: #fff;
+    color: #00ade2;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     text-transform: capitalize;
@@ -110,7 +110,7 @@ body{
 }
 .fixed-navbar{
     color: #01A8FF;
-    position: fixed;
+    position: absolute;
     z-index: 9999;
     width: 100%;
     top: 0;
@@ -121,7 +121,7 @@ body{
     
 }
 .logo-nav-left1 ul li.active a.act{
-	color:#fff !important;
+	color:#00ade2 !important;
 }
 .multi-column-dropdown li a {
     color: #999 !important;
