@@ -67,6 +67,61 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		});
 		</script>
 <!--//End-rate-->
+	<style type="text/css">
+		.modal-primary{
+			position: absolute;
+			top: 100px;
+		}
+		.nav-search{
+			font-size: 1.2em;
+			font-family: 'Cagliostro', sans-serif;
+		}
+		.sign-in-button{
+			margin-right: 6px; 
+			color:#0072FF;
+			font-family: 'Cagliostro', sans-serif;
+		}
+		.kelebihan {
+			padding-top: 10px;
+			margin-bottom: 230px;
+		}
+		.kelebihan li{
+			display: inline-block;
+			position: relative;
+			width: 25%; 
+			margin-right:-4px;
+			text-align: center;
+			font-size: 40px;
+		}
+		.kelebihan img{
+			border-radius: 50%;
+			border-color: green;
+			border : 3px solid #0072FF;
+			position: absolute;
+			top: 80px;
+			margin-left: 0;
+		}
+		.footer, .footer a{
+			color: white;
+			font-family: 'Cagliostro', sans-serif;
+			font-size: 17px;
+		}
+		.footer li{
+			list-style: none;
+		}
+		.footer div{
+			padding: 30px;
+		}
+		.footer h4{
+			font-size: 30px;
+		}
+		.footer i{
+			font-size: 15px;
+			border-radius: 50%;
+			padding: 6px;
+			border: 2px solid white;
+		}
+	</style>
 </head>
 <body>
 	<!--header-->
@@ -76,109 +131,99 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="logo-nav-left1">
 							<nav class="fixed-navbar">
 							<!-- Brand and toggle get grouped for better mobile display -->
-							<div class="row">
-<<<<<<< HEAD:index.html
-							<div class="col-lg-8" >
-							
-							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-								<ul class="nav navbar-nav col-md-6 ">
-									<li class="active hidden"><a href="index.html" class="act">Home</a></li>	
-									<!-- Mega Menu -->
-									<li class="col-md-offset-3 dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Costumer<b class="caret"></b></a>
-=======
-							<div class="col-lg-7">
-							<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-								<ul class="nav navbar-nav">
-									<!-- Mega Menu -->
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Customer<b class="caret"></b></a>
->>>>>>> 01a08ebd4bf64486ef81e36f481b3a77c17426aa:index.php
-										<ul class="dropdown-menu multi-column columns-3">
-											<div class="row">
-												<div class="col-sm-3  multi-gd-img">
-													<ul class="multi-column-dropdown">
-														<h6>Submenu1</h6>
-														<li><a href="products.html">Clothing</a></li>
-														<li><a href="products.html">Wallets</a></li>
-														<li><a href="products.html">Shoes</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html"> Underwear </a></li>
-														<li><a href="products.html">Accessories</a></li>
+								<div class="row col-lg-12">
+									<div class="col-lg-6">
+										<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+											<ul class="nav navbar-nav col-md-12">
+												<li class="active hidden"><a href="index.html" class="act">Home</a></li>	
+												<!-- Mega Menu -->
+												<li class="col-md-offset-3 dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">Costumer<b class="caret"></b></a>
+													<ul class="dropdown-menu multi-column columns-3">
+														<div class="row">
+															<div class="col-sm-3  multi-gd-img">
+																<ul class="multi-column-dropdown">
+																	<h6>Submenu1</h6>
+																	<li><a href="products.html">Clothing</a></li>
+																	<li><a href="products.html">Wallets</a></li>
+																	<li><a href="products.html">Shoes</a></li>
+																	<li><a href="products.html">Watches</a></li>
+																	<li><a href="products.html"> Underwear </a></li>
+																	<li><a href="products.html">Accessories</a></li>
+																</ul>
+															</div>
+															<div class="col-sm-3  multi-gd-img">
+																<ul class="multi-column-dropdown">
+																	<h6>Submenu2</h6>
+																	<li><a href="products.html">Sunglasses</a></li>
+																	<li><a href="products.html">Wallets,Bags</a></li>
+																	<li><a href="products.html">Footwear</a></li>
+																	<li><a href="products.html">Watches</a></li>
+																	<li><a href="products.html">Accessories</a></li>
+																	<li><a href="products.html">Jewellery</a></li>
+																</ul>
+															</div>
+															<div class="col-sm-3  multi-gd-img">
+																	<a href="products.html"><img src="images/woo.jpg" alt=" "/></a>
+															</div> 
+															<div class="col-sm-3  multi-gd-img">
+																	<a href="products.html"><img src="images/woo1.jpg" alt=" "/></a>
+															</div>
+															<div class="clearfix"></div>
+														</div>
 													</ul>
-												</div>
-												<div class="col-sm-3  multi-gd-img">
-													<ul class="multi-column-dropdown">
-														<h6>Submenu2</h6>
-														<li><a href="products.html">Sunglasses</a></li>
-														<li><a href="products.html">Wallets,Bags</a></li>
-														<li><a href="products.html">Footwear</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html">Accessories</a></li>
-														<li><a href="products.html">Jewellery</a></li>
+												</li>
+												<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">Provider <b class="caret"></b></a>
+													<ul class="dropdown-menu multi-column columns-3">
+														<div class="row">
+															<div class="col-sm-3  multi-gd-img">
+																<ul class="multi-column-dropdown">
+																	<h6>Submenu1</h6>
+																	<li><a href="products.html">Clothing</a></li>
+																	<li><a href="products.html">Wallets</a></li>
+																	<li><a href="products.html">Shoes</a></li>
+																	<li><a href="products.html">Watches</a></li>
+																	<li><a href="products.html"> Underwear </a></li>
+																	<li><a href="products.html">Accessories</a></li>
+																</ul>
+															</div>
+															<div class="col-sm-3  multi-gd-img">
+																<ul class="multi-column-dropdown">
+																	<h6>Submenu2</h6>
+																	<li><a href="products.html">Sunglasses</a></li>
+																	<li><a href="products.html">Wallets,Bags</a></li>
+																	<li><a href="products.html">Footwear</a></li>
+																	<li><a href="products.html">Watches</a></li>
+																	<li><a href="products.html">Accessories</a></li>
+																	<li><a href="products.html">Jewellery</a></li>
+																</ul>
+															</div>
+															<div class="col-sm-3  multi-gd-img">
+																	<a href="products1.html"><img src="images/woo3.jpg" alt=" "/></a>
+															</div> 
+															<div class="col-sm-3  multi-gd-img">
+																	<a href="products1.html"><img src="images/woo4.jpg" alt=" "/></a>
+															</div>
+															<div class="clearfix"></div>
+														</div>
 													</ul>
-												</div>
-												<div class="col-sm-3  multi-gd-img">
-														<a href="products.html"><img src="images/woo.jpg" alt=" "/></a>
-												</div> 
-												<div class="col-sm-3  multi-gd-img">
-														<a href="products.html"><img src="images/woo1.jpg" alt=" "/></a>
-												</div>
-												<div class="clearfix"></div>
-											</div>
-										</ul>
-									</li>
-									<li class="dropdown">
-										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Provider <b class="caret"></b></a>
-										<ul class="dropdown-menu multi-column columns-3">
-											<div class="row">
-												<div class="col-sm-3  multi-gd-img">
-													<ul class="multi-column-dropdown">
-														<h6>Submenu1</h6>
-														<li><a href="products.html">Clothing</a></li>
-														<li><a href="products.html">Wallets</a></li>
-														<li><a href="products.html">Shoes</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html"> Underwear </a></li>
-														<li><a href="products.html">Accessories</a></li>
-													</ul>
-												</div>
-												<div class="col-sm-3  multi-gd-img">
-													<ul class="multi-column-dropdown">
-														<h6>Submenu2</h6>
-														<li><a href="products.html">Sunglasses</a></li>
-														<li><a href="products.html">Wallets,Bags</a></li>
-														<li><a href="products.html">Footwear</a></li>
-														<li><a href="products.html">Watches</a></li>
-														<li><a href="products.html">Accessories</a></li>
-														<li><a href="products.html">Jewellery</a></li>
-													</ul>
-												</div>
-												<div class="col-sm-3  multi-gd-img">
-														<a href="products1.html"><img src="images/woo3.jpg" alt=" "/></a>
-												</div> 
-												<div class="col-sm-3  multi-gd-img">
-														<a href="products1.html"><img src="images/woo4.jpg" alt=" "/></a>
-												</div>
-												<div class="clearfix"></div>
-											</div>
-										</ul>
-									</li>
-									<li><a href="codes.html">About Us</a></li>
-								</ul>
+												</li>
+												<li><a href="codes.html">About Us</a></li>
+											</ul>
+										</div>
+									</div>
+										<div class="col-md-5 col-md-offset-1" style="margin-top: 7px;">
+											<form method="post" action="proses_login.php">
+												<ul class="nav navbar-nav">
+													<li class="top-right"><input type="submit" value="Sign-in" class="btn btn-default sign-in-button" ></li>
+													<li class="top-right"><input class="form-control" type="text" name="username" placeholder="Username" required></li>
+													<li>&nbsp;</li>
+													<li class="top-right"><input class="form-control" type="password" name="password" placeholder="Password" required></li>
+												</ul>
+											</form>
+									</div>
 								</div>
-								</div>
-								<div class="col-lg-5">
-								<form method="post" action="proses_login.php">
-								<ul class="nav navbar-nav">
-									<li class="top-right"><input type="submit" value="Sign-in" class="btn btn-default"></li>
-									<li class="top-right"><input class="form-control" type="text" name="username" placeholder="Username" required></li>
-									<li>&nbsp;</li>
-									<li class="top-right"><input class="form-control" type="password" name="password" placeholder="Password" required></li>
-								</ul>
-								</form>
-								</div>
-							</div>
 							</nav>
 						</div>
 				</div>
@@ -270,12 +315,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>	
 		<!--banner-->
 		<!-- SEARCH ROW -->
+		<div class="nav-search"
+			style="
+				background-color: #0072FF;
+				margin-top: 0;
+				height: 90px;
+				color:white;
+				font-size: 20px;
+				padding-top: 2%;
+			">
+			<div class="col-md-2">Top Provider</div>
+			<div class="col-md-8">
+				<ul style="list-style: none;">
+					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
+						<select style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;">
+							<option>-Lokasi-</option>
+							<option>Jakarta</option>
+							<option>Bandung</option>
+							<option>Surabaya</option>
+						</select>
+					</li>
+					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
+						<select style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;">
+							<option>-Kategori-</option>
+							<option>IT</option>
+							<option>Web Development</option>
+							<option>Automation</option>
+						</select>
+					</li>
+					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
+						<input type="text" style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;" placeholder="Keyword"  name="">
+					</li>
+				</ul>
+				<input class="col-md-2" style="margin-left: 12px; margin-top: 2px; background-color: transparent;border-color: white; border-style: solid;" type="button" name="" value="Cari">
+			</div>
+			<div class="col-md-2" style="text-align: right;padding-right: 90px;">
+				<input type="button" name="" value="Request" style="color: #0072FF; width: 100%; margin-top: 2px; background-color: white; text-decoration: none; border : none; box-shadow: 4px 4px 14px 2px #444">
+			</div>
+		</div>
 			<!--content-->
 		<div class="content">
 			<!--new-arrivals-->
-				<div class="new-arrivals-w3agile">
-					<div class="container">
-						<h2 class="tittle">New Arrivals</h2>
+				<div class="new-arrivals-w3agile " style="padding-top: 0;">
+					<div class="container" ">
+						<!-- <h2 class="tittle">New Arrivals</h2> -->
 						<div class="arrivals-grids">
 							<div class="col-md-3 arrival-grid simpleCart_shelfItem">
 								<div class="grid-arr">
@@ -395,7 +478,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			<!--new-arrivals-->
 				<!--accessories-->
-			<div class="accessories-w3l">
+			<!-- <div class="accessories-w3l">
 				<div class="container">
 					<h3 class="tittle">20% Discount on</h3>
 					<span>TRENDING DESIGNS</span>
@@ -404,12 +487,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="#" class="button1"> Quick View</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!--accessories-->
 			<!--Products-->
-				<div class="product-agile">
+				<div class="product-agile" style="padding-top: 0;">
 					<div class="container">
-						<h3 class="tittle1"> New Products</h3>
+						<!-- <h3 class="tittle1"> New Products</h3> -->
 						<div class="slider">
 							<div class="callbacks_container">
 								<ul class="rslides" id="slider">
@@ -647,7 +730,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 			<!--Products-->
-			<div class="latest-w3">
+			<!-- <div class="latest-w3">
 				<div class="container">
 					<h3 class="tittle1">Latest Fashion Trends</h3>
 					<div class="latest-grids">
@@ -723,10 +806,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"></div>
 					</div>
 				</div>
-			</div>
-				<div class="new-arrivals-w3agile">
+			</div> -->
+				<div class="new-arrivals-w3agile" style="padding-top: 0;">
 					<div class="container">
-						<h3 class="tittle1">Best Sellers</h3>
+						<!-- <h3 class="tittle1">Best Sellers</h3> -->
 						<div class="arrivals-grids">
 							<div class="col-md-3 arrival-grid simpleCart_shelfItem">
 								<div class="grid-arr">
@@ -850,55 +933,70 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!--new-arrivals-->
 		</div>
 		<!--content-->
-		<!---footer--->
-					<div class="footer-w3l">
-						<div class="container">
-							<div class="footer-grids">
-								<div class="col-md-3 footer-grid">
-									<h4>About </h4>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-									<div class="social-icon">
-										<a href="#"><i class="icon"></i></a>
-										<a href="#"><i class="icon1"></i></a>
-										<a href="#"><i class="icon2"></i></a>
-										<a href="#"><i class="icon3"></i></a>
-									</div>
-								</div>
-								<div class="col-md-3 footer-grid">
-									<h4>My Account</h4>
-									<ul>
-										<li><a href="checkout.html">Checkout</a></li>
-										<li><a href="login.html">Login</a></li>
-										<li><a href="registered.html"> Create Account </a></li>
-									</ul>
-								</div>
-								<div class="col-md-3 footer-grid">
-									<h4>Information</h4>
-									<ul>
-										<li><a href="index.html">Home</a></li>
-										<li><a href="products.html">Products</a></li>
-										<li><a href="codes.html">Short Codes</a></li>
-										<li><a href="mail.html">Mail Us</a></li>
-										<li><a href="products1.html">products1</a></li>
-									</ul>
-								</div>
-								<div class="col-md-3 footer-grid foot">
-									<h4>Contacts</h4>
-									<ul>
-										<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#">E Comertown Rd, Westby, USA</a></li>
-										<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#">1 599-033-5036</a></li>
-										<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> example@mail.com</a></li>
-										
-									</ul>
-								</div>
-							<div class="clearfix"> </div>
-							</div>
-							
-						</div>
+		<!--divider-->
+		<div style="background-color:#0072FF; height: 100px; "></div>
+		<!--divider-->
+		<!--kelebihan-->
+		<div class="sign-in-button" style="font-size: 60px; text-align: center;">
+			Kelebihan <span style="color: black;">bikin</span> di <img src="images/logo.png">
+		</div>
+		<div class="sign-in-button kelebihan" style="background-color:#000; height: 80px; width: 100%;color: #0072FF; ">
+			<ul >
+				<li><img src="images/r.jpg">Mudah</li>
+				<li><img src="images/r.jpg">Cepat</li>
+				<li><img src="images/r.jpg">Aman</li>
+				<li><img src="images/r.jpg">Nyaman</li>
+			</ul>
+		</div>
+		<!--kelebihan-->
+		<!--footer-->
+		<div>
+			<div class="col-md-3 footer" style="background-color: green; position: relative; clear:both; padding-bottom: 0;" >
+				<div style="padding-bottom: 0">
+					<h4 style="color: black; padding-bottom: 0;">About </h4>
+					<p style="color: black;"s>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="social-icon">
+						<a href="#"><i class="icon"></i></a>
+						<a href="#"><i class="icon1"></i></a>
+						<a href="#"><i class="icon2"></i></a>
+						<a href="#"><i class="icon3"></i></a>
 					</div>
-					<!---footer--->
+				</div>
+			</div>
+		
+			<div class="col-md-9 footer" style="background-color:#0072FF; height: 282px">
+				<div class="col-md-4 " style="clear: both;">
+					<h4>My Account</h4>
+					<ul>
+						<li><a href="checkout.html">Checkout</a></li>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="registered.html"> Create Account </a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 ">
+					<h4>Information</h4>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="products.html">Products</a></li>
+						<li><a href="codes.html">Short Codes</a></li>
+						<li><a href="mail.html">Mail Us</a></li>
+						<li><a href="products1.html">products1</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 ">
+					<h4>Contacts</h4>
+					<ul>
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i><a href="#"> E Comertown Rd, Westby, USA</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i><a href="#"> 1 599-033-5036</a></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:example@mail.com"> example@mail.com</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+					<!--footer-->
 					<!--copy-->
-					<div class="copy-section">
+					<!-- <div class="copy-section">
 						<div class="container">
 							<div class="copy-left">
 								<p>&copy; 2016 New Shop . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
@@ -908,7 +1006,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="clearfix"></div>
 						</div>
-					</div>
+					</div> -->
 				<!--copy-->
 				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
 				<div class="modal-dialog" role="document">
