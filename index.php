@@ -486,12 +486,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div> -->
 			<!--accessories-->
 			<!--Products-->
-				<div class="product-agile" style="padding-top: 0;">
-					<div class="container">
+				<div class="product-agile" style="padding-top: 0; padding-bottom: 0;">
+					<div class="container"">
 						<!-- <h3 class="tittle1"> New Products</h3> -->
 						<div class="slider">
 							<div class="callbacks_container">
-								<ul class="rslides" id="slider">
+								<ul class="rslides" id="slider" style="height: 650px;">
 									<li>	 
 										<div class="caption">
 											<div class="col-md-3 cap-left simpleCart_shelfItem">
