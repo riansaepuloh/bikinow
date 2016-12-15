@@ -13,6 +13,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bikinow.css">
 <!--css-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -68,65 +69,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 <!--//End-rate-->
 	<style type="text/css">
-		.modal-primary{
-			position: absolute;
-			top: 100px;
-		}
-		.nav-search{
-			font-size: 1.2em;
-			font-family: 'Cagliostro', sans-serif;
-		}
-		.sign-in-button{
-			margin-right: 6px; 
-			color:#0072FF;
-			font-family: 'Cagliostro', sans-serif;
-		}
-		.kelebihan {
-			padding-top: 10px;
-			margin-bottom: 230px;
-		}
-		.kelebihan li{
-			display: inline-block;
-			position: relative;
-			width: 25%; 
-			margin-right:-4px;
-			text-align: center;
-			font-size: 40px;
-		}
-		.kelebihan img{
-			border-radius: 50%;
-			border-color: green;
-			border : 3px solid #0072FF;
-			position: absolute;
-			top: 80px;
-			margin-left: 0;
-		}
-		.footer, .footer a{
-			color: black;
-			font-family: 'Cagliostro', sans-serif;
-			font-size: 17px;
-		}
-		.footer li{
-			list-style: none;
-			margin-top: 30px;
-			text-align: center;
-		}
-		.footer div{
-			padding: 30px;
-		}
-		.footer h4{
-			font-size: 30px;
-			text-align: center;
-		}
-		.footer > .col-md-4 > h4 {
-			color:white;
-		}
-		.footer i{
-			font-size: 15px;
-			border-radius: 50%;
-			padding: 6px;
-			border: 2px solid white;
-		}
+		
 	</style>
 </head>
 <body>
@@ -143,7 +86,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											<ul class="nav navbar-nav col-md-12">
 												<li class="active hidden"><a href="index.html" class="act">Home</a></li>	
 												<!-- Mega Menu -->
-												<li class="col-md-offset-3 dropdown">
+												<li class="col-xs-offset-3 dropdown">
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown">Costumer<b class="caret"></b></a>
 													<ul class="dropdown-menu multi-column columns-3">
 														<div class="row">
@@ -207,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 											</ul>
 										</div>
 									</div>
-										<div class="col-md-4 col-md-offset-2" style="margin-top: 7px;">
+										<div class="col-md-4 col-md-offset-2 nav-login">
 											<form method="post" action="proses_login.php">
 												<ul class="nav navbar-nav">
 													<li class="top-right"><input type="submit" value="Sign-in" class="btn btn-default sign-in-button" ></li>
@@ -216,7 +159,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													<li class="top-right"><input class="form-control" type="password" name="password" placeholder="Password" required></li>
 												</ul>
 											</form>
-									</div>
+										</div>
 								</div>
 							</nav>
 						</div>
@@ -271,7 +214,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="core-slider_viewport">
 						<div class="core-slider_list">
 							<div class="core-slider_item">
-								<img src="images/b1.jpg" class="img-responsive" alt="">
+								<img src="images/1.jpg" class="img-responsive" alt="">
 							</div>
 							 <div class="core-slider_item">
 								 <img src="images/b2.jpg" class="img-responsive" alt="">
@@ -309,48 +252,40 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>	
 		<!--banner-->
 		<!-- SEARCH ROW -->
-		<div class="nav-search"
-			style="
-				background-color: #0072FF;
-				margin-top: 0;
-				height: 90px;
-				color:white;
-				font-size: 20px;
-				padding-top: 2%;
-			">
+		<div class="nav-search">
 			<div class="col-md-2">Top Provider</div>
 			<div class="col-md-8">
-				<ul style="list-style: none;">
-					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
-						<select style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;">
+				<ul>
+					<li class="col-sm-3">
+						<select >
 							<option>-Lokasi-</option>
 							<option>Jakarta</option>
 							<option>Bandung</option>
 							<option>Surabaya</option>
 						</select>
 					</li>
-					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
-						<select style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;">
+					<li class="col-sm-3">
+						<select>
 							<option>-Kategori-</option>
 							<option>IT</option>
 							<option>Web Development</option>
 							<option>Automation</option>
 						</select>
 					</li>
-					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
-						<input type="text" style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;" placeholder="Keyword"  name="">
+					<li class="col-sm-3">
+						<input type="text" placeholder="Keyword"  name="">
 					</li>
 				</ul>
-				<input class="col-md-2" style="margin-left: 12px; margin-top: 2px; background-color: transparent;border-color: white; border-style: solid;" type="button" name="" value="Cari">
+				<input class="col-md-2 cari-tombol" type="button" name="" value="Cari">
 			</div>
-			<div class="col-md-2" style="text-align: right;padding-right: 90px;">
-				<input type="button" name="" value="Request" style="color: #0072FF; width: 100%; margin-top: 2px; background-color: white; text-decoration: none; border : none; box-shadow: 4px 4px 14px 2px #444">
+			<div class="col-md-2 request-container" >
+				<input type="button" name="" value="Request" class="request-tombol" >
 			</div>
 		</div>
 			<!--content-->
 		<div class="content">
 			<!--new-arrivals-->
-				<div class="new-arrivals-w3agile " style="padding-top: 0;">
+				<div class="new-arrivals-w3agile ">
 					<div class="container" ">
 						<!-- <h2 class="tittle">New Arrivals</h2> -->
 						<div class="arrivals-grids">
@@ -486,12 +421,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div> -->
 			<!--accessories-->
 			<!--Products-->
-				<div class="product-agile" style="padding-top: 0; padding-bottom: 0;">
+				<div class="product-agile">
 					<div class="container"">
 						<!-- <h3 class="tittle1"> New Products</h3> -->
 						<div class="slider">
 							<div class="callbacks_container">
-								<ul class="rslides" id="slider" style="height: 650px;">
+								<ul class="rslides" id="slider">
 									<li>	 
 										<div class="caption">
 											<div class="col-md-3 cap-left simpleCart_shelfItem">
@@ -804,7 +739,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 			</div> -->
-				<div class="new-arrivals-w3agile" style="padding-top: 0;">
+				<div class="new-arrivals-w3agile">
 					<div class="container">
 						<!-- <h3 class="tittle1">Best Sellers</h3> -->
 						<div class="arrivals-grids">
@@ -937,54 +872,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="sign-in-button" style="font-size: 60px; text-align: center;">
 			Kelebihan <span style="color: black;">bikin</span> di <img src="images/logo.png">
 		</div>
-		<div class="sign-in-button kelebihan" style="background-color:#000; height: 80px; width: 100%;color: #0072FF; ">
-			<ul >
-				<li><img src="images/r.jpg">Mudah</li>
-				<li><img src="images/r.jpg">Cepat</li>
-				<li><img src="images/r.jpg">Aman</li>
-				<li><img src="images/r.jpg">Nyaman</li>
-			</ul>
-		</div>
-		<!--kelebihan-->
-		<!--footer-->
-		<div>
-			<div class="col-md-3 footer" style="position: relative; clear:both; padding-bottom: 0;" >
-				<div style="padding-bottom: 0">
-					<h4 style="color: black; padding-bottom: 0;"><img src="images/logo.png" style="width: 100%;"> </h4>
-					<p style="color: black;"s> Jalan DR Setiabudi 229 Bandung, West Java, Indonesia 46196</p>
-					<div class="social-icon">
-						<a href="#"><i class="icon"></i></a>
-						<a href="#"><i class="icon1"></i></a>
-						<a href="#"><i class="icon2"></i></a>
-						<a href="#"><i class="icon3"></i></a>
+		<div class="img-back-bottom" >
+			<div class="sign-in-button kelebihan" style="">
+				<ul >
+					<li><img src="images/r.jpg">Mudah</li>
+					<li><img src="images/r.jpg">Cepat</li>
+					<li><img src="images/r.jpg">Aman</li>
+					<li><img src="images/r.jpg">Nyaman</li>
+				</ul>
+			</div>
+			<!--kelebihan-->
+			<!--footer-->
+			<div>
+				<div class="col-md-3 footer" >
+					<div style="padding-bottom: 0">
+						<h4 style="color: black; padding-bottom: 0;"><img src="images/logo.png" style="width: 100%;"> </h4>
+						<p style="color: black;"s> Jalan DR Setiabudi 229 Bandung, West Java, Indonesia 46196</p>
+						<div class="social-icon">
+							<a href="#"><i class="icon"></i></a>
+							<a href="#"><i class="icon1"></i></a>
+							<a href="#"><i class="icon2"></i></a>
+							<a href="#"><i class="icon3"></i></a>
+						</div>
 					</div>
 				</div>
-			</div>
-		
-			<div class="col-md-9 footer" style="background-color:#0072FF; height: 282px">
-				<div class="col-md-4 " style="clear: both;">
-					<h4>Bikin</h4>
-					<ul>
-						<li><a href="checkout.html">About Us</a></li>
-						<li><a href="login.html">Syarat dan Ketentuan</a></li>
-						<li><a href="registered.html"> Kebijakan Privasi </a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 ">
-					<h4>Costumer</h4>
-					<ul>
-						<li><a href="index.html">Cara BIkin</a></li>
-						<li><a href="products.html">FAQ</a></li>
-						<li><a href="codes.html">Tips Bikin</a></li>
-					</ul>
-				</div>
-				<div class="col-md-4 ">
-					<h4>Provider</h4>
-					<ul>
-						<li><a href="#"> Cara Bikin</a></li>
-						<li><a href="#"> FAQ</a></li>
-						<li><a href="#"> Tips Bikin</a></li>
-					</ul>
+			
+				<div class="col-md-9 footer" style="background-color:#0072FF; height: 282px">
+					<div class="col-md-4 " style="clear: both;">
+						<h4>Bikin</h4>
+						<ul>
+							<li><a href="checkout.html">About Us</a></li>
+							<li><a href="login.html">Syarat dan Ketentuan</a></li>
+							<li><a href="registered.html"> Kebijakan Privasi </a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 ">
+						<h4>Costumer</h4>
+						<ul>
+							<li><a href="index.html">Cara BIkin</a></li>
+							<li><a href="products.html">FAQ</a></li>
+							<li><a href="codes.html">Tips Bikin</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4 ">
+						<h4>Provider</h4>
+						<ul>
+							<li><a href="#"> Cara Bikin</a></li>
+							<li><a href="#"> FAQ</a></li>
+							<li><a href="#"> Tips Bikin</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

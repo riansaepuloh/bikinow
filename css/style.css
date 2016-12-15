@@ -577,6 +577,7 @@ h2.tittle {
     padding: 5em 0;
     background: #F9F8F8;
 	text-align:center;
+  padding-top: 0;
 }
 .arrivals-grids {
     margin-top: 4em;
@@ -835,6 +836,7 @@ a.button1 {
   width: 100%;
   padding: 0;
   margin: 0;
+  height: 650px;
   }
 
 .rslides li {
@@ -906,6 +908,8 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .product-agile {
     padding: 5em 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 h3.tittle1 {
     text-align: center;
