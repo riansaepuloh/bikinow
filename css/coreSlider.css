@@ -30,7 +30,8 @@
 .core-slider_item img {
   display: block;
   max-width: 100%;
-  height: auto;
+  min-width: 100%;
+  min-height: 600;
 }
 
 .core-slider_nav.is-disabled { display: none; }
