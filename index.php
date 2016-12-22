@@ -9,12 +9,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>New Shop a E-Commerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
-<!--css-->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/bikinow.css">
-<!--css-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="New Shop Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -23,6 +17,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.min.js"></script>
 <link href='//fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!--css-->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bikinow.css">
+<!--css-->
+
 <!--search jQuery-->
 	<script src="js/main.js"></script>
 <!--search jQuery-->
@@ -74,13 +75,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 	<!--header-->
-		<div class="header">
-			<div class="heder-top">
-				<div class="container">
-						<div class="logo-nav-left1">
-							<nav class="fixed-navbar">
+		<div class="header fixme">
+			<div class="heder-top fixme">
+				<div class="container fixme" >
+						<div class="logo-nav-left1 fixme">
+							<nav class="fixed-navbar fixmed" >
 							<!-- Brand and toggle get grouped for better mobile display -->
-								<div class="row col-lg-12">
+								<div class="row col-lg-12 fixme">
 									<div class="col-lg-6">
 										<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 											<ul class="nav navbar-nav col-md-12">
@@ -199,7 +200,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<input  type="password" value="Confirm Password" name="Confirm Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Confirm Password';}" required="">
 							<div class="clearfix"></div>
 						</div>
-						<input type="submit" value="Submit">
+						<input class="tombol-submit" type="submit" style="" value="Submit">
+						
 					</form>
 					</div>
 					</div>
@@ -276,12 +278,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<input type="text" placeholder="Keyword"  name="">
 					</li>
 				</ul>
-				<input class="col-md-2 cari-tombol" type="button" name="" value="Cari">
+				<input class="col-md-2 cari-tombol" type="button" toggle="modal" href="#modal-cari" name="" value="Cari">
 			</div>
 			<div class="col-md-2 request-container" >
 				<input type="button" name="" value="Request" class="request-tombol" >
 			</div>
 		</div>
+		<div id="modal-cari" aria-hidden ="true" class="modal modal-primary fade gila"></div>
 			<!--content-->
 		<div class="content">
 			<!--new-arrivals-->
