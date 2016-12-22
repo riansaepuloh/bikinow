@@ -1,18 +1,44 @@
-<!--
-Au<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+<?php
+session_start();
+include "config/connection.php";
+// if ($_SESSION) {
+// 	if ($_SESSION['level_akses']=="admin") {
+// 		header("Location: admin/index.php");
+// 	} else if ($_SESSION['level_akses']=="provider") {
+// 		header("Location: provider/index.php");
+// 	} else {
+// 		header("Location: customer/index.php");
+// 	}
+	
+// }
+ ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>New Shop a E-Commerce Online Shopping Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>BIKINOW.COM</title>
+<style>
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(images/Preloader_3.gif) center no-repeat #fff;
+}
+</style>
+<!-- jQuery loading -->
+<script src="loading.min.js"></script>
+<script src="modernizr.js"></script>
 <!--css-->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/bootstrap-select.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.css" rel="stylesheet">
+<!-- <link href="css/material-dashboard.css" rel="stylesheet"/> -->
+<link href="css/demo.css" rel="stylesheet" />
 <!--css-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,6 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Cagliostro' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
 <!--search jQuery-->
+<script src="js/bootstrap-select.js"></script>
 	<script src="js/main.js"></script>
 <!--search jQuery-->
 <script src="js/responsiveslides.min.js"></script>
@@ -128,8 +155,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			border: 2px solid white;
 		}
 	</style>
+	<script>
+		//paste this code under head tag or in a seperate js file.
+		// Wait for window load
+		$(window).load(function() {
+			// Animate loader off screen
+			$(".se-pre-con").fadeOut("slow");;
+		});
+	</script>
 </head>
 <body>
+	<!-- Paste this code after body tag -->
+	<div class="se-pre-con"></div>
+
 	<!--header-->
 		<div class="header">
 			<div class="heder-top">
@@ -145,78 +183,92 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<!-- Mega Menu -->
 												<li class="col-md-offset-3 dropdown">
 													<a href="#" class="dropdown-toggle" data-toggle="dropdown">Costumer<b class="caret"></b></a>
-													<ul class="dropdown-menu multi-column columns-3">
-														<div class="row">
-															<div class="col-sm-6  multi-gd-img">
-																<ul class="multi-column-dropdown">
-																	<h6>Submenu1</h6>
-																	<li><a href="products.html">Clothing</a></li>
-																	<li><a href="products.html">Wallets</a></li>
-																	<li><a href="products.html">Shoes</a></li>
-																	<li><a href="products.html">Watches</a></li>
-																	<li><a href="products.html"> Underwear </a></li>
-																	<li><a href="products.html">Accessories</a></li>
-																</ul>
-															</div>
-															<div class="col-sm-6  multi-gd-img">
-																<ul class="multi-column-dropdown">
-																	<h6>Submenu2</h6>
-																	<li><a href="products.html">Sunglasses</a></li>
-																	<li><a href="products.html">Wallets,Bags</a></li>
-																	<li><a href="products.html">Footwear</a></li>
-																	<li><a href="products.html">Watches</a></li>
-																	<li><a href="products.html">Accessories</a></li>
-																	<li><a href="products.html">Jewellery</a></li>
-																</ul>
-															</div>
-															<div class="clearfix"></div>
-														</div>
+													<ul class="dropdown-menu" >
+														<li><a href="#">Cara Bikin</a></li>
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Tips Bikin</a></li>
 													</ul>
 												</li>
 												<li class="dropdown">
-													<a href="#" class="dropdown-toggle" data-toggle="dropdown">Provider <b class="caret"></b></a>
-													<ul class="dropdown-menu multi-column columns-3" >
-														<div class="row"  >
-															<div class="col-sm-6  multi-gd-img">
-																<ul class="multi-column-dropdown">
-																	<h6>Submenu1</h6>
-																	<li><a href="products.html">Clothing</a></li>
-																	<li><a href="products.html">Wallets</a></li>
-																	<li><a href="products.html">Shoes</a></li>
-																	<li><a href="products.html">Watches</a></li>
-																	<li><a href="products.html"> Underwear </a></li>
-																	<li><a href="products.html">Accessories</a></li>
-																</ul>
-															</div>
-															<div class="col-sm-6  multi-gd-img">
-																<ul class="multi-column-dropdown">
-																	<h6>Submenu2</h6>
-																	<li><a href="products.html">Sunglasses</a></li>
-																	<li><a href="products.html">Wallets,Bags</a></li>
-																	<li><a href="products.html">Footwear</a></li>
-																	<li><a href="products.html">Watches</a></li>
-																	<li><a href="products.html">Accessories</a></li>
-																	<li><a href="products.html">Jewellery</a></li>
-																</ul>
-															</div>
-															<div class="clearfix"></div>
-														</div>
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown">Provider<b class="caret"></b></a>
+													<ul class="dropdown-menu" >
+														<li><a href="#">Cara Bikin</a></li>
+														<li><a href="#">FAQ</a></li>
+														<li><a href="#">Tips Bikin</a></li>
 													</ul>
 												</li>
 												<li><a href="codes.html">About Us</a></li>
 											</ul>
 										</div>
 									</div>
-										<div class="col-md-4 col-md-offset-2" style="margin-top: 7px;">
-											<form method="post" action="proses_login.php">
+									<!-- proses stelah login -->
+									<?php 
+									if ($_SESSION) {
+										if ($_SESSION['level_akses']=="admin") {
+										?>
+										<div class="col-md-4"></div>
+										<div class="col-md-2" style="margin-top: 7px;">
+											<ul class="nav navbar-nav">
+												<li class="dropdown">
+													<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['username']; ?><b class="caret"></b></a>
+													<ul class="dropdown-menu" >
+														<li><a href="#">PROFILE</a></li>
+														<li><a href="#">FAQ</a></li>
+														<li><a href="logout.php" onclick="demo.showNotification('top','center')">LOGOUT</a></li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+										<?php
+										} else if ($_SESSION['level_akses']=="provider") {
+											?>
+											<div class="col-md-4"></div>
+											<div class="col-md-2" style="margin-top: 7px;">
 												<ul class="nav navbar-nav">
-													<li class="top-right"><input type="submit" value="Sign-in" class="btn btn-default sign-in-button" ></li>
-													<li class="top-right"><input class="form-control" type="text" name="username" placeholder="Username" required></li>
-													<li>&nbsp;</li>
-													<li class="top-right"><input class="form-control" type="password" name="password" placeholder="Password" required></li>
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['username']; ?><b class="caret"></b></a>
+														<ul class="dropdown-menu" >
+															<li><a href="#">PROFILE</a></li>
+															<li><a href="#">FAQ</a></li>
+															<li><a href="logout.php">LOGOUT</a></li>
+														</ul>
+													</li>
 												</ul>
-											</form>
+											</div>
+										<?php
+										} else {
+											?>
+											<div class="col-md-4"></div>
+											<div class="col-md-2" style="margin-top: 7px;">
+												<ul class="nav navbar-nav">
+													<li class="dropdown">
+														<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $_SESSION['username']; ?><b class="caret"></b></a>
+														<ul class="dropdown-menu" >
+															<li><a href="customer/index.php">PROFILE</a></li>
+															<li><a href="#">FAQ</a></li>
+															<li><a href="logout.php">LOGOUT</a></li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+											<?php
+											}
+									} else {
+									 ?>
+									<!-- end proses setelah login -->
+									<div class="col-md-4 col-md-offset-2" style="margin-top: 7px;">
+										<form method="post" action="proses_login.php">
+											<ul class="nav navbar-nav">
+												<li class="top-right"><input type="submit" value="Sign-in" class="btn btn-default sign-in-button" ></li>
+												<li class="top-right"><input class="form-control" type="text" name="username" placeholder="Username" required></li>
+												<li>&nbsp;</li>
+												<li class="top-right"><input class="form-control" type="password" name="password" placeholder="Password" required></li>
+											</ul>
+										</form>
 									</div>
+									<?php 
+										}
+									 ?>
 								</div>
 							</nav>
 						</div>
@@ -235,29 +287,120 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <div class="modal-body">
 
-					<form action="#" method="post">
-						<div class="key">
-							<i class="fa fa-user" aria-hidden="true"></i>
-							<input  type="text" value="Username" name="Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Username';}" required="">
-							<div class="clearfix"></div>
-						</div>
-						<div class="key">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-							<input  type="text" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-							<div class="clearfix"></div>
-						</div>
-						<div class="key">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-							<input  type="password" value="Password" name="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="">
-							<div class="clearfix"></div>
-						</div>
-						<div class="key">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-							<input  type="password" value="Confirm Password" name="Confirm Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Confirm Password';}" required="">
-							<div class="clearfix"></div>
-						</div>
-						<input type="submit" value="Submit">
-					</form>
+					
+						<div class="" role="tabpanel" data-example-id="togglable-tabs">
+	                      <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+	                        <li role="presentation" class="active">
+	                        <a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">CUSTOMER</a>
+	                        </li>
+	                        <li role="presentation" class="">
+	                        <a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">PROVIDER</a>
+	                        </li>
+
+	                      </ul>
+	                      <div id="myTabContent" class="tab-content">
+	                        <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="customer-tab">
+	                          <p>Untuk menjadi CUSTOMER di BIKINOW.COM silahkan isi data dibawah ini !</p>
+	                          <form action="register_account.php" method="post" id="reg_customer">
+								<br>
+								<br>
+								<div class="key">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									<input  type="text" name="username" placeholder="username" required="">
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<input  type="text" name="email" placeholder="e-mail" required="">
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<select class="form-control-registrasi" name="location" required  placeholder="pilih kota">
+									<option value="" disabled selected="selected">Pilih Kota</option>
+									<?php
+									$query =  mysqli_query($koneksi, "SELECT kd_kota,nama_kota FROM t_kota ORDER BY nama_kota");
+			                        while ( $res = mysqli_fetch_array($query)) {
+			                            echo '<option value="'.$res['kd_kota'].'">'.ucwords(strtolower($res['nama_kota'])).'</option>';
+			                        }
+			                         ?>
+			                         </select>
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									<input  type="password" name="password" placeholder="password" required="">
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									<input  type="password" name="confrim_pass" placeholder="re-password" required="">
+									<div class="clearfix"></div>
+								</div>
+									<center>
+										<input type="submit" value="Register" class="btn btn-primary" id="reg_customer">
+									</center>
+								</form>
+	                        </div>
+	                        <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="provider-tab">
+	                          <p>Untuk menjadi PROVIDER di BIKINOW.COM silahkan isi data dibawah ini !</p>
+	                          <form action="register_account.php" method="post">
+								<br>
+								<br>
+								<div class="key">
+									<i class="fa fa-user" aria-hidden="true"></i>
+									<input  type="text" name="username" placeholder="username" required="">
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<input  type="text" name="email" placeholder="e-mail" required="">
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<select class="form-control-registrasi" name="kd_kategori" required  placeholder="pilih kota">
+									<option value="" disabled selected="selected">Pilih Kategori</option>
+									<?php 
+		                       		$kategori =  mysqli_query($koneksi, "SELECT kd_kategori,nama_kategori FROM t_kategori");
+		                        	while ( $res1 = mysqli_fetch_array($kategori)) {
+		                            echo '<option value="'.$res1['kd_kategori'].'">'.$res1['nama_kategori'].'</option>';
+		                        	}
+		                         	?>
+			                         </select>
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-map-marker" aria-hidden="true"></i>
+									<select class="form-control-registrasi" name="location" required  placeholder="pilih kota">
+									<option value="" disabled selected="selected">Pilih Kota</option>
+									<?php
+									$query =  mysqli_query($koneksi, "SELECT kd_kota,nama_kota FROM t_kota ORDER BY nama_kota");
+			                        while ( $res = mysqli_fetch_array($query)) {
+			                            echo '<option value="'.$res['kd_kota'].'">'.ucwords(strtolower($res['nama_kota'])).'</option>';
+			                        }
+			                         ?>
+			                         </select>
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									<input  type="password" name="password" placeholder="password" required="">
+									<div class="clearfix"></div>
+								</div>
+								<div class="key">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									<input  type="password" name="confrim_pass" placeholder="re-password" required="">
+									<div class="clearfix"></div>
+								</div>
+								<center>
+										<input type="submit" value="Register" class="btn btn-primary">
+									</center>
+								</form>
+	                        </div>
+	                      </div>
+	                    </div>
+						
 					</div>
 					</div>
                 </div>
@@ -289,7 +432,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="core-slider_arrow core-slider_arrow__left"></div>
 					</div>
 					<div class="ban-text">
-						<h4><a href="#daftar" data-toggle="modal">Join-Us</a></h4>
+						<?php 
+						if (!$_SESSION) {
+							echo "<h4><a href='#daftar' data-toggle='modal'>Join-Us</a></h4>";
+						}
+						 ?>
 						<img src="images/logo.png">
 					</div>
 					<div class="core-slider_control-nav"></div>
@@ -322,19 +469,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-8">
 				<ul style="list-style: none;">
 					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
-						<select style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;">
-							<option>-Lokasi-</option>
-							<option>Jakarta</option>
-							<option>Bandung</option>
-							<option>Surabaya</option>
+						<select style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;" name="kd_kota">
+						<option value="semua">-Semua Lokasi-</option>
+						<?php
+						$query1 =  mysqli_query($koneksi, "SELECT kd_kota,nama_kota FROM t_kota ORDER BY nama_kota"); 
+                        while ( $result = mysqli_fetch_array($query1)) {
+                            echo '<option value="'.$result['kd_kota'].'">'.ucwords(strtolower($result['nama_kota'])).'</option>';
+                        }
+                         ?>
 						</select>
 					</li>
 					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
 						<select style="text-decoration: none;border:none;width: 100%;padding:5px;box-shadow:1px 1px 7px 0px #aaaaaa inset;">
-							<option>-Kategori-</option>
-							<option>IT</option>
-							<option>Web Development</option>
-							<option>Automation</option>
+							<option value="semua">-Semua Kategori-</option>
+							<?php 
+                       		$kategori =  mysqli_query($koneksi, "SELECT kd_kategori,nama_kategori FROM t_kategori");
+                        	while ( $res1 = mysqli_fetch_array($kategori)) {
+                            echo '<option value="'.$res1['kd_kategori'].'">'.ucwords(strtolower($res1['nama_kategori'])).'</option>';
+                        	}
+                         	?>
 						</select>
 					</li>
 					<li class="col-sm-3" style="display: inline-block;color: #0072FF">
@@ -344,150 +497,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<input class="col-md-2" style="margin-left: 12px; margin-top: 2px; background-color: transparent;border-color: white; border-style: solid;" type="button" name="" value="Cari">
 			</div>
 			<div class="col-md-2" style="text-align: right;padding-right: 90px;">
-				<input type="button" name="" value="Request" style="color: #0072FF; width: 100%; margin-top: 2px; background-color: white; text-decoration: none; border : none; box-shadow: 4px 4px 14px 2px #444">
+				<input type="button" name="" value="Request" onclick="demo.showNotification('top','center')" style="color: #0072FF; width: 100%; margin-top: 2px; background-color: white; text-decoration: none; border : none; box-shadow: 4px 4px 14px 2px #444">
 			</div>
 		</div>
 			<!--content-->
 		<div class="content">
 			<!--new-arrivals-->
 				<div class="new-arrivals-w3agile " style="padding-top: 0;">
-					<div class="container" ">
-						<!-- <h2 class="tittle">New Arrivals</h2> -->
-						<div class="arrivals-grids">
-							<div class="col-md-3 arrival-grid simpleCart_shelfItem">
-								<div class="grid-arr">
-									<div  class="grid-arrival">
-										<figure>		
-											<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal1">
-												<div class="grid-img">
-													<img  src="images/p6.jpg" class="img-responsive" alt="">
-												</div>
-												<div class="grid-img">
-													<img  src="images/p5.jpg" class="img-responsive"  alt="">
-												</div>			
-											</a>		
-										</figure>	
-									</div>
-									<div class="ribben">
-										<p>Kategori 1</p>
-									</div>
-									<div class="ribben1">
-										<p>Kategori 2</p>
-									</div>
-									<div class="block">
-										<div class="starbox small ghosting"> </div>
-									</div>
-									<div class="women">
-										<h6><a href="single.html">Nama Provider</a></h6>
-										<span class="size">Deskripsi Provider</span>
-										<a href="#" data-text="Order" class="my-cart-b item_add">Order</a>
-										<p ><em class="item_price">Nama Kota</em></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 arrival-grid simpleCart_shelfItem">
-								<div class="grid-arr">
-									<div  class="grid-arrival">
-										<figure>		
-											<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal2">
-												<div class="grid-img">
-													<img  src="images/p7.jpg" class="img-responsive" alt="">
-												</div>
-												<div class="grid-img">
-													<img  src="images/p8.jpg" class="img-responsive"  alt="">
-												</div>			
-											</a>		
-										</figure>	
-									</div>
-									<div class="ribben2">
-										<p>Kategori 3</p>
-									</div>
-									<div class="block">
-										<div class="starbox small ghosting"> </div>
-									</div>
-									<div class="women">
-										<h6><a href="single.html">Nama Provider</a></h6>
-										<span class="size">Deskripsi Provider</span>
-										<a href="#" data-text="Order" class=" my-cart-b item_add">Order</a>
-										<p ><em class="item_price">Nama Kota</em></p>
-										
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 arrival-grid simpleCart_shelfItem">
-								<div class="grid-arr">
-									<div  class="grid-arrival">
-										<figure>		
-											<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal3">
-												<div class="grid-img">
-													<img  src="images/p10.jpg" class="img-responsive" alt="">
-												</div>
-												<div class="grid-img">
-													<img  src="images/p9.jpg" class="img-responsive"  alt="">
-												</div>			
-											</a>		
-										</figure>	
-									</div>
-									<div class="ribben1">
-										<p>Kategori 2</p>
-									</div>
-									<div class="block">
-										<div class="starbox small ghosting"> </div>
-									</div>
-									<div class="women">
-										<h6><a href="single.html">Nama Provider</a></h6>
-										<span class="size" >Deskripsi Provider</span>
-										<a href="#" data-text="Order" class="my-cart-b item_add">Order</a>
-										<p ><em class="item_price">Nama Kota</em></p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 arrival-grid simpleCart_shelfItem">
-								<div class="grid-arr">
-									<div  class="grid-arrival">
-										<figure>		
-											<a href="#" class="new-gri" data-toggle="modal" data-target="#myModal4">
-												<div class="grid-img">
-													<img  src="images/p11.jpg" class="img-responsive" alt="">
-												</div>
-												<div class="grid-img">
-													<img  src="images/p12.jpg" class="img-responsive"  alt="">
-												</div>			
-											</a>		
-										</figure>	
-									</div>
-									<div class="block">
-										<div class="starbox small ghosting"> </div>
-									</div>
-									<div class="women">
-										<h6><a href="single.html">Nama Provider</a></h6>
-										<span class="size">Deskripsi Provider</span>
-										<a href="#" data-text="Order" class="my-cart-b item_add">Order</a>
-										<p ><em class="item_price">Nama Kota</em></p>
+					<div class="container">
 
-									</div>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-			<!--new-arrivals-->
-				<!--accessories-->
-			<!-- <div class="accessories-w3l">
-				<div class="container">
-					<h3 class="tittle">20% Discount on</h3>
-					<span>TRENDING DESIGNS</span>
-					<div class="button">
-						<a href="#" class="button1"> Shop Now</a>
-						<a href="#" class="button1"> Quick View</a>
-					</div>
-				</div>
-			</div> -->
-			<!--accessories-->
 			<!--Products-->
 				<div class="product-agile" style="padding-top: 0; padding-bottom: 0;">
-					<div class="container"">
+					<div class="container">
 						<!-- <h3 class="tittle1"> New Products</h3> -->
 						<div class="slider">
 							<div class="callbacks_container">
@@ -726,84 +747,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 					</div>
 				</div>
-			<!--Products-->
-			<!-- <div class="latest-w3">
-				<div class="container">
-					<h3 class="tittle1">Latest Fashion Trends</h3>
-					<div class="latest-grids">
-						<div class="col-md-4 latest-grid">
-							<div class="latest-top">
-								<img  src="images/l1.jpg" class="img-responsive"  alt="">
-								<div class="latest-text">
-									<h4>Men</h4>
-								</div>
-								<div class="latest-text2 hvr-sweep-to-top">
-									<h4>-50%</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 latest-grid">
-							<div class="latest-top">
-								<img  src="images/l2.jpg" class="img-responsive"  alt="">
-								<div class="latest-text">
-									<h4>Shoes</h4>
-								</div>
-								<div class="latest-text2 hvr-sweep-to-top">
-									<h4>-20%</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 latest-grid">
-							<div class="latest-top">
-								<img  src="images/l3.jpg" class="img-responsive"  alt="">
-								<div class="latest-text">
-									<h4>Women</h4>
-								</div>
-								<div class="latest-text2 hvr-sweep-to-top">
-									<h4>-50%</h4>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="latest-grids">
-						<div class="col-md-4 latest-grid">
-							<div class="latest-top">
-								<img  src="images/l4.jpg" class="img-responsive"  alt="">
-								<div class="latest-text">
-									<h4>Watch</h4>
-								</div>
-								<div class="latest-text2 hvr-sweep-to-top">
-									<h4>-45%</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 latest-grid">
-							<div class="latest-top">
-								<img  src="images/l5.jpg" class="img-responsive"  alt="">
-								<div class="latest-text">
-									<h4>Bag</h4>
-								</div>
-								<div class="latest-text2 hvr-sweep-to-top">
-									<h4>-10%</h4>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 latest-grid">
-							<div class="latest-top">
-								<img  src="images/l6.jpg" class="img-responsive"  alt="">
-								<div class="latest-text">
-									<h4>Cameras</h4>
-								</div>
-								<div class="latest-text2 hvr-sweep-to-top">
-									<h4>-30%</h4>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div> -->
+
 				<div class="new-arrivals-w3agile" style="padding-top: 0;">
 					<div class="container">
 						<!-- <h3 class="tittle1">Best Sellers</h3> -->
@@ -988,276 +932,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 		</div>
-					<!--footer-->
-					<!--copy-->
-					<!-- <div class="copy-section">
-						<div class="container">
-							<div class="copy-left">
-								<p>&copy; 2016 New Shop . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-							</div>
-							<div class="copy-right">
-								<img src="images/card.png" alt=""/>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div> -->
-				<!--copy-->
-				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="news-gr">
-								<div class="col-md-5 new-grid1">
-								<img src="images/p5.jpg" class="img-responsive" alt="">
-								</div>
-									<div class="col-md-7 new-grid">
-										<h5>Ten Women's Cotton Viscose fabric Grey Shrug</h5>
-										<h6>Quick Overview</h6>
-										<span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-										<div class="color-quality">
-											<div class="color-quality-left">
-												<h6>Color : </h6>
-												<ul>
-													<li><a href="#"><span></span>Red</a></li>
-													<li><a href="#" class="brown"><span></span>Yellow</a></li>
-													<li><a href="#" class="purple"><span></span>Purple</a></li>
-													<li><a href="#" class="gray"><span></span>Violet</a></li>
-												</ul>
-											</div>
-											<div class="color-quality-right">
-												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
-														<div class="entry value-minus1">&nbsp;</div>
-														<div class="entry value1"><span>1</span></div>
-														<div class="entry value-plus1 active">&nbsp;</div>
-													</div>
-												</div>
-												<!--quantity-->
-														<script>
-														$('.value-plus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)+1;
-															divUpd.text(newVal);
-														});
 
-														$('.value-minus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)-1;
-															if(newVal>=1) divUpd.text(newVal);
-														});
-														</script>
-													<!--quantity-->
-											</div>
-											<div class="clearfix"> </div>
-										</div>
-									<div class="women">
-										<span class="size">Deskripsi Provider</span>
-										<p ><em class="item_price"> Nama Kota </em></p>
-										<div class="add">
-										   <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana" data-summary="summary 3" data-price="2.00" data-quantity="1" data-image="images/of2.png">Add to Cart</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="news-gr">
-								<div class="col-md-5 new-grid1">
-								<img src="images/p7.jpg" class="img-responsive" alt="">
-								</div>
-									<div class="col-md-7 new-grid">
-										<h5>Ten Women's Cotton Viscose fabric Grey Shrug</h5>
-										<h6>Quick Overview</h6>
-										<span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-										<div class="color-quality">
-											<div class="color-quality-left">
-												<h6>Color : </h6>
-												<ul>
-													<li><a href="#"><span></span>Red</a></li>
-													<li><a href="#" class="brown"><span></span>Yellow</a></li>
-													<li><a href="#" class="purple"><span></span>Purple</a></li>
-													<li><a href="#" class="gray"><span></span>Violet</a></li>
-												</ul>
-											</div>
-											<div class="color-quality-right">
-												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
-														<div class="entry value-minus1">&nbsp;</div>
-														<div class="entry value1"><span>1</span></div>
-														<div class="entry value-plus1 active">&nbsp;</div>
-													</div>
-												</div>
-												<!--quantity-->
-														<script>
-														$('.value-plus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)+1;
-															divUpd.text(newVal);
-														});
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
 
-														$('.value-minus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)-1;
-															if(newVal>=1) divUpd.text(newVal);
-														});
-														</script>
-													<!--quantity-->
-											</div>
-											<div class="clearfix"> </div>
-										</div>
-									<div class="women">
-										<span class="size">Deskripsi Provider</span>
-										<p ><em class="item_price"> Nama Kota </em></p>
-										<div class="add">
-										   <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana" data-summary="summary 3" data-price="2.00" data-quantity="1" data-image="images/of2.png">Add to Cart</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="news-gr">
-								<div class="col-md-5 new-grid1">
-								<img src="images/p10.jpg" class="img-responsive" alt="">
-								</div>
-									<div class="col-md-7 new-grid">
-										<h5>Ten Men's Cotton Viscose fabric Grey Shrug</h5>
-										<h6>Quick Overview</h6>
-										<span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-										<div class="color-quality">
-											<div class="color-quality-left">
-												<h6>Color : </h6>
-												<ul>
-													<li><a href="#"><span></span>Red</a></li>
-													<li><a href="#" class="brown"><span></span>Yellow</a></li>
-													<li><a href="#" class="purple"><span></span>Purple</a></li>
-													<li><a href="#" class="gray"><span></span>Violet</a></li>
-												</ul>
-											</div>
-											<div class="color-quality-right">
-												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
-														<div class="entry value-minus1">&nbsp;</div>
-														<div class="entry value1"><span>1</span></div>
-														<div class="entry value-plus1 active">&nbsp;</div>
-													</div>
-												</div>
-												<!--quantity-->
-														<script>
-														$('.value-plus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)+1;
-															divUpd.text(newVal);
-														});
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
 
-														$('.value-minus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)-1;
-															if(newVal>=1) divUpd.text(newVal);
-														});
-														</script>
-													<!--quantity-->
-											</div>
-											<div class="clearfix"> </div>
-										</div>
-									<div class="women">
-										<span class="size">Deskripsi Provider</span>
-										<p ><em class="item_price"> Nama Kota </em></p>
-										<div class="add">
-										   <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana" data-summary="summary 3" data-price="2.00" data-quantity="1" data-image="images/of2.png">Add to Cart</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal4" tabindex="-1" role="dialog">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content modal-info">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
-						</div>
-						<div class="modal-body">
-							<div class="news-gr">
-								<div class="col-md-5 new-grid1">
-								<img src="images/p12.jpg" class="img-responsive" alt="">
-								</div>
-									<div class="col-md-7 new-grid">
-										<h5>Ten Men's Cotton Viscose fabric Grey Shrug</h5>
-										<h6>Quick Overview</h6>
-										<span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-										<div class="color-quality">
-											<div class="color-quality-left">
-												<h6>Color : </h6>
-												<ul>
-													<li><a href="#"><span></span>Red</a></li>
-													<li><a href="#" class="brown"><span></span>Yellow</a></li>
-													<li><a href="#" class="purple"><span></span>Purple</a></li>
-													<li><a href="#" class="gray"><span></span>Violet</a></li>
-												</ul>
-											</div>
-											<div class="color-quality-right">
-												<h6>Quality :</h6>
-												<div class="quantity"> 
-													<div class="quantity-select">                           
-														<div class="entry value-minus1">&nbsp;</div>
-														<div class="entry value1"><span>1</span></div>
-														<div class="entry value-plus1 active">&nbsp;</div>
-													</div>
-												</div>
-												<!--quantity-->
-														<script>
-														$('.value-plus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)+1;
-															divUpd.text(newVal);
-														});
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
 
-														$('.value-minus1').on('click', function(){
-															var divUpd = $(this).parent().find('.value1'), newVal = parseInt(divUpd.text(), 10)-1;
-															if(newVal>=1) divUpd.text(newVal);
-														});
-														</script>
-													<!--quantity-->
-											</div>
-											<div class="clearfix"> </div>
-										</div>
-										<div class="women">
-										<span class="size">Deskripsi Provider</span>
-										<p ><em class="item_price"> Nama Kota </em></p>
-										<div class="add">
-										   <button class="btn btn-danger my-cart-btn my-cart-b" data-id="3" data-name="Kabuli Chana" data-summary="summary 3" data-price="2.00" data-quantity="1" data-image="images/of2.png">Add to Cart</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="clearfix"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script src="js/bootstrap-notify.js"></script>
+<script src="js/demo.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 if(isset($_POST['username'])&&isset($_POST['password'])){
   include("config/connection.php");
   
@@ -19,16 +20,17 @@ if(isset($_POST['username'])&&isset($_POST['password'])){
     $row = mysqli_fetch_assoc($query);
     if($row['level_akses'] == "admin"){
       $_SESSION['username']=$username;
-      header("Location: admin/index.php");
+      $_SESSION['level_akses']="admin";
     }else if($row['level_akses'] == "provider"){
       $_SESSION['username']=$username;
-      header("Location: media.php ");
+      $_SESSION['level_akses']="provider";
     }else if($row['level_akses'] == "customer"){
       $_SESSION['username']=$username;
-      header("Location: media.php");
+      $_SESSION['level_akses']="customer";
     }else{
       echo '<div class="alert alert-danger"> Data Yang dimasukan Salah</div>';
     }
+    header("Location: index.php");
   }
 }
 ?>

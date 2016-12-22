@@ -38,6 +38,26 @@ body{
 	margin:0 0; 
 	font-family: 'Open Sans', sans-serif;
 }
+
+.img-circle.profile_img {
+    width: 70%;
+    background: #000;
+    z-index: 1000;
+    position: inherit;
+    margin-top: 7px;
+    border: 1px solid rgba(52,73,94,0.44);
+    padding: 4px;
+}
+.profile_pic {
+  width: 35%;
+  float: left; }
+
+ul.widget_profile_box li .profile_img {
+  width: 85px;
+  height: 85px;
+  margin: 0;
+  margin-top: -28px; }
+
 .header-top {
     background: #1565c0;
 	 padding: .7em 0;
@@ -112,7 +132,7 @@ body{
 .fixed-navbar{
     color: #01A8FF;
     position: absolute;
-    z-index: 9999;
+    z-index: 500;
     width: 100%;
     top: 0;
     left: 0;
@@ -1115,7 +1135,7 @@ h3.tittle1 {
     border-bottom: 1px solid #FFFFFF;
 }
 .modal-dialog {
-    width: 950px;
+    width: 500px;
     z-index: 999999;
 }
 .color-quality-left{
