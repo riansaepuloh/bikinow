@@ -1,139 +1,518 @@
-
-		.tombol-submit{
-			text-decoration: none;
-			background-color: transparent;
-			border-style: solid;
-			border-color: #0072FF;
+		body{
+			overflow-y: visible;
+			padding: 0;
+			margin: 0;
 		}
-		.modal-primary{
-			position: absolute;
-			top: 100px;
-		}
-		.nav-search{
-			font-family: 'Cagliostro', sans-serif;
-			background-color: #0072FF;
-			margin-top: 0;
-			height: 90px;
-			color:white;
-			font-size: 20px;
-			padding-top: 25px;
-		}
-		.nav-search ul{
-			list-style: none;
-		}
-		.nav-search li{
-			display: inline-block;color: #0072FF;
-		}
-		.nav-search select{
-			text-decoration: none;
-			border:none;
-			width: 100%;
-			padding:5px;
-			box-shadow:1px 1px 7px 0px #aaaaaa inset;
-		}
-		.nav-search li>input{
-			 text-decoration: none;
-			 border:none;
-			 width: 100%;
-			 padding:5px;
-			 box-shadow:1px 1px 7px 0px #aaaaaa inset;
-		}
-		.nav-search .cari-tombol{
-			margin-left: 12px; 
-			margin-top: 2px; 
-			background-color: transparent;
-			border-color: white; 
-			border-style: solid;
-		}
-		.nav-search .request-container{
-			text-align: right;
-			padding-right: 90px;
-		}
-		.nav-search .request-tombol{
-			color: #0072FF; width: 100%;
-			margin-top: 2px; 
-			background-color: white; 
-			text-decoration: none; border : none; 
-			box-shadow: 4px 4px 14px 2px #444;
+		
+		.center-text{
+			text-align: center;
 		}
 		.nav-login {
 			margin-top: 7px;
 		}
-		.sign-in-button{
-			margin-right: 6px; 
-			color:#0072FF;
-			font-family: 'Cagliostro', sans-serif;
-		}
-		.kelebihan {
-			padding-top: 10px;
-			margin-bottom: 230px;
-			background-color:#000; 
-			height: 80px; 
-			width: 100%;
-			color: #0072FF; 
-		}
-		.kelebihan li{
-			display: inline-block;
-			position: relative;
-			width: 25%; 
-			margin-right:-4px;
-			text-align: center;
-			font-size: 40px;
-		}
-		.kelebihan img{
-			border-radius: 50%;
-			border-color: green;
-			border : 3px solid #0072FF;
-			position: absolute;
-			top: 80px;
-			margin-left: 0;
-		}
-		.footer, .footer a{
-			color: black;
-			font-family: 'Cagliostro', sans-serif;
-			font-size: 17px;
-		}
-		.footer li{
-			list-style: none;
-			margin-top: 30px;
-			text-align: center;
-		}
-		.footer div{
-			padding: 30px;
-		}
-		.footer h4{
-			font-size: 30px;
-			text-align: center;
-		}
-		.footer > .col-md-4 > h4 {
-			color:white;
-		}
-		.footer i{
-			font-size: 15px;
-			border-radius: 50%;
-			padding: 6px;
-			border: 2px solid white;
-		}
-		.img-back-bottom{
-			background-image: url("../images/2.jpg");
-			background-color: blue;
-			background-repeat: no-repeat;
-			background-size: 100%;
-			width: 100%;
-			height: 592px;
-		}
-		.fixme{
-			background-color: red;
-		}
-		@media (max-width: 1000px){
-      .fixme{
-        width: 1000px !important;
-          background-color: green;
-      }
-      body{
-      width: 1000px !important;
-        	
-      }
+
+    /*==========================css for main navbar===================*/
+    .main-navbar{
+    	position: absolute;
+    	left: 0;
+    	top: 0;
+    	z-index: 2;
+    	width: 100%;
+    }
+    .navbar-header button{
+    	margin-left: 0px;
+    }
+    .navbar {
+    	border-radius: 0;
+    	background-color: transparent;
+    	border: none;
+    	z-index: 9;
+        margin-bottom: 0;
+    }
+    .collapse li a{
+    	color: #0072FF !important;
+    	font-size: 17px;
+    }
+    .collapse li a:hover{
+    	background-color: #eee !important;
+    	color: #0072FF !important;
+    	/*opacity: 0.9;*/
+    }
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+    	color: #0072FF;
+    	background-color: #ddd;
+    }
+    .collapse {
+    	border: none;
+    }
+    .collapsing{
+    	border:none;
+    	color : red;
+    }
+    .collapsing a{
+    	color:white !important;
+    }
+    .collapse.in a{
+    	color: white !important;
+    }
+    .collapse.in{
+        margin-bottom: 10px;
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+    	background-color: #0072FF;
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+    	border-color: #ddd;
+    }
+    .navbar-inverse .navbar-header .navbar-toggle:hover,
+    .navbar-inverse .navbar-header .navbar-toggle:focus{
+    	background-color: #eee;
+    }
+    .navbar-inverse .navbar-header .navbar-toggle{
+    	border-color: #eee;
+    }
+    .show-menu li{
+    	display: block !important;
+    	background-color: #0072ff;
+    }
+    @media screen and (max-width: 880px){
+    	/*.navbar-header button{
+    		display: block !important;
+    	}*/
+    	/*.navbar-collapse li{
+    		display: none;
+    	}*/
+    }
+    @media screen and (max-width: 620px){
+	    .navbar-collapse{
+	    	background-color:  #0072FF;
+	    }	
 
     }
-		
+   
+	/*======================end of css for navbar========================*/
+	/*========================= Sign in =================================*/
+	.sign-in-part{
+		margin-top: -37px; 
+		margin-right: 2%; 
+		position: absolute;
+		right: 0;
+		z-index: 1200;
+        background-color: red;
+	}
+	.sign-in-container{
+		list-style: none;
+	}
+	.sign-in-container li{
+		display: inline-block;
+	}
+	.sign-in-button{
+		margin-right: 6px;
+		margin-top: -28px; 
+		color:#0072FF;
+		font-family: 'Cagliostro', sans-serif;
+	}
+	.show-sign-in{
+    	display: block !important;
+    	height: 150px;
+    	width: 100% ;
+    	margin-top: -20px !important;
+    	background-color: #eee !important;
+    }
+
+    /*this is when navbar hide*/
+    @media screen and (max-width: 880px){ 
+        /*@media (min-width: 768px) {*/
+    	.sign-in-part{
+    		position: absolute;
+    		top: 49px;
+    	}
+
+    }
+    @media screen and (max-width:620px) {
+    	.sign-in-part{
+    		float: none;
+    		position: relative;
+    		top: 0;
+    		margin-top: 15px;
+    		padding:0;
+    		width: 100%;
+    		-webkit-transition: margin-top 0.2s ease-in-out;
+    		transition: margin-top 0.2s ease-in-out;
+    		display: none;
+    	}
+    	.sign-in-container{
+    		margin: 0;
+    		padding-right: 5px;
+    		padding-left: 5px;
+    	}
+    	.sign-in-container li{
+    		float: left;
+    		margin-bottom: -5px;
+    		width: 100%;
+    	}
+    	.sign-in-container li .btn{
+    		position: relative;
+    		top: 120px;
+    	}
+    	.sign-in-button{
+    		width: 100%;
+    	}
+    }
+    @media screen and (min-width: 620px){
+    	.show-sign-in{
+    		height: auto;
+    		width: auto;
+    		position: absolute;
+    		right: 0;
+    		margin-top: -37px !important;
+    		background-color: transparent !important;
+    	}
+    }
+    @media screen and (min-width: 880px){
+        .show-sign-in{
+            margin-top: -52px !important;
+        }
+    }
+    /*========================= end of sign in ============================*/
+    /*==========================banner============================*/
+    .isi-banner h4{
+    	text-align: center;
+    	margin-top: 2%;
+    	font-size: 200%;
+    }
+    .isi-banner img{
+    	width: 80%;
+    	margin-left: 10%;
+    	margin-top: 10%;
+    }
+    .isi-banner{
+    	position: absolute;
+    	z-index: 1;
+    	width: 50%;
+    	top: 20%;
+    	margin-left: 25%;
+    }
+    .container-banner{
+    	clear: both;
+    }
+    .carousel-inner .item{
+    	background-color: blue;
+    }
+    .carousel-inner .item img{
+    	width: 100% !important;
+    }
+    .carousel-inner{
+    	max-height: 520px;
+    }
+    @media screen and (max-width: 620px){
+    	.isi-banner {
+    		top:60px;
+    	}
+    	.isi-banner a{
+    		font-size: 20px;
+    	}
+    	.isi-banner img{
+    		width: 100%;
+    		margin-left: 10%;
+    		margin-top: 10%;
+    	}
+    }
+    @media screen and (max-width: 360px){
+    	.isi-banner {
+    		top:30px;
+    	}
+        .isi-banner h4{
+            margin-top: 10%;
+        }
+    }
+    @media screen and (max-width: 560px){
+    	.core-slider_arrow__right{
+    		right: 15px !important;
+    	}
+    	.core-slider_arrow__left{
+    		left: 15px !important;
+    	}
+    	.core-slider_arrow{
+    		top:60% !important;
+    	}
+    }
+    /*==========================end of banner=====================*/
+	/*=========================== search row ===========================*/
+	.nav-search{
+		font-family: 'Cagliostro', sans-serif;
+		background-color: #0072FF;
+		overflow: auto;
+		color:white;
+		font-size: 20px;
+	}
+	.nav-search div{
+		padding:0;
+	}
+	.top-provider{
+        height: 81px;
+		padding: 22px !important;
+		font-size: 25px;
+		border-bottom: 1px solid;
+		border-color: red;
+	}
+	.option-search{
+		color: #0072ff;
+	}
+    .option-search select{
+        width: 90%;
+        margin-top: 23px;
+    }
+	.tombol-submit{
+		text-decoration: none;
+		background-color: transparent;
+		border-style: solid;
+		border-color: #0072FF;
+	}
+	.modal-primary{
+		position: absolute;
+		top: 0px;
+	}
+	.nav-search ul{
+		list-style: none;
+	}
+	.nav-search li{
+		display: inline-block;color: #0072FF;
+	}
+	.nav-search select{
+		text-decoration: none;
+		border:none;
+		box-shadow:1px 1px 7px 0px #aaaaaa inset;
+	}
+	.nav-search li>input{
+		 text-decoration: none;
+		 border:none;
+		 box-shadow:1px 1px 7px 0px #aaaaaa inset;
+	}
+	.tombol-cari{
+		margin-top: 23px;
+		background-color: transparent;
+		border : solid;
+		border-radius: 4px;
+	}
+	.tombol-cari:hover{
+		background-color: #116699;
+	}
+	.nav-search .request-container{
+		text-align: right;
+		padding-right: 90px;
+	}
+	.keyword-input{
+		margin-top: 23px;
+        border: none;
+        color: #0072FF;
+		box-shadow:1px 1px 7px 0px #aaaaaa inset;
+	}
+	.tombol-request{
+		background-color: transparent;
+		border:none;
+		border-bottom:1px solid;
+		height: 81px;
+		border-color: red;
+	}
+	.tombol-request:hover{
+		background-color: #2244FF;
+	}
+	@media screen and (max-width: 1200px){
+		.tombol-cari{
+			margin-bottom: 10px;
+		}
+        .option-search{
+            padding:0px;
+            padding-left: 23px !important;
+        }
+	}
+    @media screen and (max-width: 990px){
+        .keyword-part .keyword-input{
+            padding-top: 0px;
+            margin-top: 10px;
+            background-color: transparent;
+            color: white;
+            box-shadow: none;
+            border-color: white !important;
+            border-bottom: 3px solid;
+        }
+        .tombol-cari{
+            margin-top: 10px;
+        }
+        .option-search{
+            padding-left: 23px !important;
+        }
+    }
+    @media screen and (max-width: 450px){
+        .top-provider{
+            font-size: 20px;
+            height: 40px;
+            padding : 5px !important;
+        }
+        .tombol-request{
+            height: 40px;
+        }
+        .option-search{
+            font-size: 15px;
+        }
+        .keyword-part{
+            font-size: 15px;
+        }
+    }
+	/*============================end of search row =====================*/
+    /*============================ content ==============================*/
+
+    /*============================ end of content =======================*/
+    /*============================ divider ==============================*/
+    .divider{
+        background-color: #0072ff;
+        height: 80px;
+    }
+    .new-arrivals-w3agile{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    @media screen and (max-width: 800px){
+        .divider{
+            height: 50px;
+        }
+    }
+    /*============================ end of divider =======================*/
+    /*============================ kelebihan ==========================*/
+    .header-kelebihan{
+        font-size: 60px;
+        color: #0072ff; 
+        text-align: center;
+    }
+    .img-back-bottom{
+        background-image: url("../images/2.jpg");
+        background-color: blue;
+        background-repeat: repeat;
+        background-size: 100%;
+        width: 100%;
+        height: 546px;
+    }
+    .kelebihan {
+        margin-bottom: 230px;
+        height: 80px; 
+        width: 100%;
+        color: #0072FF; 
+
+    }
+    .kelebihan li{
+        text-align: center;
+        font-size: 40px;
+        list-style: none;
+        margin: 0;
+        padding:0;         
+    }
+    .kelebihan img{
+        border-radius: 50%;
+        border-color: white;
+        border : 3px solid #0072FF;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .kelebihan li div{
+        margin: 0;
+        background-color: black;
+    }
+    @media screen and (max-width: 880px){
+        .kelebihan li{
+        background-image: url("../images/2.jpg");
+        background-color: blue;
+        background-repeat: repeat;
+        background-size: 100%;
+        }
+    }
+    @media screen and (max-width: 680px){
+        .header-kelebihan{
+            font-size: 30px;
+        }
+        .header-kelebihan img{
+            width: 80%;
+        }
+    }
+    /*============================ end of kelebihan ===================*/
+    /*============================ footer ===========================*/
+        .footer-container{
+            position: relative;
+            background-color: white;
+            margin-top: -41px;
+        }
+        .footer, .footer a{
+            color: black;
+            font-family: 'Cagliostro', sans-serif;
+            font-size: 17px;
+        }
+        .footer li{
+            list-style: none;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .footer div{
+            padding: 30px;
+        }
+        .footer h4{
+            font-size: 30px;
+            text-align: center;
+        }
+        .footer > .col-md-4 > h4 {
+            color:white;
+        }
+        .footer i{
+            font-size: 15px;
+            border-radius: 50%;
+            padding: 6px;
+            border: 2px solid white;
+        }
+        .footer img{
+            width: 100%;
+        }
+        .social-icon{
+            margin-left: -40px;
+            margin-right: -40px;
+            margin-top: -10px
+        }
+        
+        @media screen and (max-width: 1200px){
+            .footer img{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width: 880px){
+            .footer-container{
+                margin-top: 170px;
+                padding-right: 0 ;
+                padding-left: 0;
+            }
+        }
+        @media screen and (max-width: 992px){
+            
+            .footer{
+                padding:0;
+            }
+            .footer div{
+                padding :30px;
+                margin :10px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .customer-footer{
+                background-color: white;
+                width: 100%;
+            }
+            .customer-footer h4{
+                color: #0072ff !important;
+            }
+        }
+    /*============================ end of footer ===========================*/
+    /*============================modal ===============================*/
+    .form-control-registrasi{
+        border:none;
+    }
+    /*=============================end of modal ======================*/

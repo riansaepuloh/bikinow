@@ -2098,6 +2098,10 @@ p.quote {
     background: #fff;
     border: 1px solid #999;
     margin-bottom: 2em;
+    padding-right: 0;
+}
+.key select{
+  margin-right:-25px;
 }
 .form-w3agile h3{
     color: #1565C0;
@@ -2784,8 +2788,8 @@ ul.multi-column-dropdown h6 {
     max-height: 678px;
 }
 .navbar-nav {
-    margin:5.5px 0px;
-    text-align: center;
+    /*margin:5.5px 0px;
+    text-align: center;*/
 }
 .navbar-nav .open .dropdown-menu {
     background: #fff;
