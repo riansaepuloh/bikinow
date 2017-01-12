@@ -19,6 +19,13 @@
     	z-index: 2;
     	width: 100%;
     }
+    .background-navbar{
+        background-color: #0072ff;
+        padding-bottom: 15px;
+    }
+    .background-navbar .navbar-collapse a{
+            color: white !important;
+    }
     .navbar-header button{
     	margin-left: 0px;
     }
@@ -100,8 +107,7 @@
 		margin-right: 2%; 
 		position: absolute;
 		right: 0;
-		z-index: 1200;
-        background-color: red;
+		z-index: 1200;    
 	}
 	.sign-in-container{
 		list-style: none;
@@ -395,6 +401,7 @@
         background-size: 100%;
         width: 100%;
         height: 546px;
+        background-position: bottom;
     }
     .kelebihan {
         margin-bottom: 230px;
@@ -516,3 +523,54 @@
         border:none;
     }
     /*=============================end of modal ======================*/
+    /*=============================video profile ====================*/
+    .video-profile{
+        height: 500px;
+        background-color: yellow;
+        color: blue;
+        text-align: center;
+    }
+    .video-profile span{
+        position: absolute;
+        top :250px;
+        font-size: 60px;
+        margin-left: -70px;
+    }
+    /*============================= end of video profile ====================*/
+    /*============================= vision ====================*/
+    .vision{
+        margin-top: 0;
+        height: 500px;
+        background-color: pink;
+        background-image: url("../images/1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: bottom;
+    }
+    .vision section{
+        position: relative;
+        left: 50px;
+        top:100px;
+    }
+    .vision img{
+        float:right;
+        padding: 30px;
+    }
+    .vision h2{
+        margin:0;
+        font-size: 50px;
+    }
+    .vision .divider{
+        height: 10px;
+        width: 70%;
+    }
+    .vision p{
+        font-size: 30px;
+    }
+    /*============================= end of vision ====================*/
+    /*============================= motivation ======================*/
+    .motivation{
+        height: 400px;
+        background-color: lightblue;
+    }
+    /*============================= end of motivation ================*/

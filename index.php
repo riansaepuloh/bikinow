@@ -372,7 +372,7 @@ include "config/connection.php";
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="listbox">
 				<div class="item active">
-					<img src="images/1.jpg" alt="Chania" width="460" height="35">
+					<img  src="images/1.jpg" alt="Chania" width="460" height="35">
 				</div>
 
 				<div class="item">
